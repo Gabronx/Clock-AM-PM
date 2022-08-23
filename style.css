@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -18,19 +19,30 @@ html.dark{
     --secondary-color: #333;
 }
 
+/* footer.dark{
+    --primary-color: #fff;
+    --secondary-color: #333;
+} */
+
 html.dark{
     background-color: #111;
     color: var(--primary-color);
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     margin: 0;
+}
+
+.button-clock {
+    display: flex;
+    justify-content: center;
 }
 
 .toggle {
@@ -41,7 +53,8 @@ body{
     border-radius: 4px;
     padding: 8px 12px;
     position: absolute;
-    top: 100px;
+    top: 50px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .toggle:focus{
@@ -134,4 +147,26 @@ body{
     line-height: 18px;
     transition: all 0.5s ease-in;
     font-size: 12px;
+}
+
+footer {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 300;
+    /* background: rgb(5, 5, 5); */
+    position: fixed;
+    bottom: 0;
+
+
+}
+
+footer p {
+    /* color: #fff; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
 }
